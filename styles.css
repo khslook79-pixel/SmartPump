@@ -218,139 +218,24 @@ h3 {
 }
 
 .hero-visual {
-  position: relative;
-  min-height: 560px;
+  margin: 0;
 }
 
-.phone-shell,
-.pump-device,
+.hero-visual img {
+  display: block;
+  width: min(100%, 620px);
+  height: auto;
+  margin-left: auto;
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+}
+
 .feature-preview,
 .consult-form,
 .compare-table,
 blockquote {
   background: var(--surface);
   box-shadow: var(--shadow);
-}
-
-.phone-shell {
-  position: absolute;
-  top: 28px;
-  left: 50%;
-  width: min(74vw, 310px);
-  height: 560px;
-  transform: translateX(-42%);
-  border: 10px solid #0f172a;
-  border-radius: 42px;
-  padding: 18px;
-}
-
-.phone-screen {
-  height: 100%;
-  border-radius: 30px;
-  padding: 26px 20px;
-  background:
-    linear-gradient(180deg, #f0fdf4 0%, #ffffff 44%, #ecfdf5 100%);
-}
-
-.status-row,
-.dose-panel {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 14px;
-  padding: 18px;
-  border-radius: 8px;
-  background: #ffffff;
-}
-
-.status-row span,
-.dose-panel span {
-  color: var(--muted);
-  font-size: 13px;
-  font-weight: 800;
-}
-
-.status-row strong {
-  color: var(--accent);
-  font-size: 48px;
-  line-height: 1;
-}
-
-.status-row strong::after {
-  content: " mg/dL";
-  color: var(--muted);
-  font-size: 12px;
-}
-
-.glucose-chart {
-  height: 220px;
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  align-items: end;
-  gap: 10px;
-  margin: 36px 0;
-  padding: 18px;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.72);
-}
-
-.glucose-chart span {
-  height: var(--h);
-  border-radius: 8px 8px 3px 3px;
-  background: linear-gradient(180deg, var(--secondary), var(--primary));
-}
-
-.dose-panel strong {
-  color: var(--primary);
-}
-
-.pump-device {
-  position: absolute;
-  right: 4%;
-  bottom: 34px;
-  width: 210px;
-  height: 150px;
-  border-radius: 24px;
-  padding: 14px;
-  border: 1px solid var(--line);
-}
-
-.pump-face {
-  height: 100%;
-  display: grid;
-  align-content: center;
-  gap: 8px;
-  border-radius: 16px;
-  padding: 18px;
-  background: #0f172a;
-  color: #ffffff;
-}
-
-.pump-light {
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  background: var(--accent);
-  box-shadow: 0 0 20px rgba(16, 185, 129, 0.8);
-}
-
-.pump-face small {
-  color: #a7f3d0;
-}
-
-.tube {
-  position: absolute;
-  inset: 210px 0 auto auto;
-  width: min(68vw, 380px);
-  height: 190px;
-  pointer-events: none;
-}
-
-.tube path {
-  fill: none;
-  stroke: rgba(5, 150, 105, 0.42);
-  stroke-width: 8;
-  stroke-linecap: round;
 }
 
 .section-heading {
@@ -685,10 +570,6 @@ details p {
     padding-top: 72px;
   }
 
-  .hero-visual {
-    min-height: 600px;
-  }
-
   .pain-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -716,27 +597,9 @@ details p {
     font-size: 18px;
   }
 
-  .hero-visual {
-    min-height: 520px;
-  }
-
-  .phone-shell {
-    left: 45%;
-    width: min(84vw, 292px);
-    height: 500px;
-    transform: translateX(-50%);
-  }
-
-  .pump-device {
-    right: 0;
-    bottom: 10px;
-    width: 180px;
-    height: 132px;
-  }
-
-  .tube {
-    inset: 200px auto auto 2%;
-    width: 320px;
+  .hero-visual img {
+    width: 100%;
+    border-radius: 18px;
   }
 
   .pain-grid,
